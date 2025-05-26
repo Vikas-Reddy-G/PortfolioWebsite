@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vikas Reddy Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <style>
+    body {
+      background-color: #0d0b1f;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #1a103d;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px #8a2be2;
+    }
+    header h1 {
+      margin: 0;
+      color: #8a2be2;
+      text-shadow: 0 0 10px #8a2be2;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #8a2be2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    .section-box {
+      background-color: #1f114a;
+      margin: 40px auto;
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 1000px;
+      box-shadow: 0 0 30px #8a2be2;
+    }
+    h2 {
+      font-size: 2.5rem;
+      color: #8a2be2;
+      text-shadow: 0 0 10px #8a2be2;
+      animation: jump 2s infinite;
+    }
+    ul, p, li, a {
+      color: #e0d6ff;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 5px #fff;
+    }
+    img.profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+      box-shadow: 0 0 20px #8a2be2;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a103d;
+      color: #aaa;
+    }
+    @keyframes jump {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vikas Reddy</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="section-box" data-aos="fade-up">
+    <img src="vikas.jpg" alt="Vikas Reddy" class="profile-pic">
+    <h2>About Me</h2>
+    <p>Hi, I'm Vikas Reddy 👋<br>
+    Python Developer with 3+ years in banking security, fraud detection, and real-time systems using ML, APIs, and cloud infra (AWS, GCP). Passionate about turning data into secure, actionable insights.</p>
+  </section>
+
+  <section id="skills" class="section-box" data-aos="zoom-in">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python, Java, JavaScript, SQL, C++</li>
+      <li>Flask, Django, FastAPI, MERN Stack</li>
+      <li>TensorFlow, PyTorch, Scikit-learn, Generative AI, LLMs</li>
+      <li>AWS, GCP (S3, Lambda, Vertex AI, Bedrock)</li>
+      <li>Docker, Kubernetes, Jenkins, GitHub Actions, Terraform</li>
+      <li>MySQL, PostgreSQL, MongoDB</li>
+      <li>REST APIs, Web Services, OpenCTI</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section-box" data-aos="fade-left">
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://github.com/Vikas-Reddy-G/Vikas-Reddy-G" target="_blank">Portfolio Repository</a></li>
+      <li><a href="https://github.com/Vikas-Reddy-G/real-time-financial-api" target="_blank">Real-time Financial Data API</a></li>
+      <li><a href="https://github.com/Vikas-Reddy-G/real-time-transaction-monitor" target="_blank">Transaction Monitor</a></li>
+      <li><a href="https://github.com/Vikas-Reddy-G/fraud-detection-ml" target="_blank">Fraud Detection ML</a></li>
+      <li><a href="https://github.com/Vikas-Reddy-G/Face-Recognition-Attendance-System" target="_blank">Face Recognition Attendance</a></li>
+      <li><a href="https://github.com/Vikas-Reddy-G/todo-app" target="_blank">Todo App</a></li>
+    </ul>
+  </section>
+
+  <section id="resume" class="section-box" data-aos="fade-right">
+    <h2>Resume</h2>
+    <a href="assets/resume.pdf" download style="color: #fff;">Download My Resume</a>
+  </section>
+
+  <section id="contact" class="section-box" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <ul>
+      <li>Email: <a href="mailto:reddyvikas721@gmail.com">reddyvikas721@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/vikas-reddy-0424482a7" target="_blank">Vikas Reddy</a></li>
+    </ul>
+  </section>
+
+  <section id="reach-out" class="section-box" data-aos="zoom-in">
+    <h2>Reach Out to Me ✉️</h2>
+    <p>Got a project in mind or just want to say hello? Drop a message below!</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+      <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; border: none; border-radius: 10px; font-size: 1rem;">
+      <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; border: none; border-radius: 10px; font-size: 1rem;">
+      <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 10px; border: none; border-radius: 10px; font-size: 1rem;"></textarea>
+      <button type="submit" style="padding: 10px 20px; background-color: #8a2be2; color: white; border: none; border-radius: 10px; font-size: 1rem; cursor: pointer;">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Vikas Reddy. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
